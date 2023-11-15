@@ -51,6 +51,8 @@ abstract class _ObjectHolder<T extends ncb.NSObject> {
     return false;
   }
 
+  T get nsObject => _nsObject;
+
   @override
   int get hashCode => _nsObject.hashCode;
 }
